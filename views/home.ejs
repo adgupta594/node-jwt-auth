@@ -1,0 +1,21 @@
+<%- include('partials/header'); -%>
+
+<header>
+  <div class="smoothie">
+    <img src="../public/logo.png" alt="">
+  </div>
+  <div class="headings">
+    <h2>Interntask</h2>
+    <h3>JWT Auth login and signup</h3>
+    <a href="/smoothies" class="btn">
+      <% if (user) { %>
+        Go to Dashboard
+      <% } else { %>
+        Login
+      <% } %>
+    </a>
+  </div>
+</header>
+
+
+<%- include('partials/footer'); -%>
